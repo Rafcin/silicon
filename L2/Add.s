@@ -29,4 +29,4 @@ _start:
 
     mov x0, #0   // ARM 64-bit version
     mov x8, #93  // ARM 64-bit version of this (Ubuntu 64-bit, Arch64)
-    SVC 0 // Exit
+    svc 0 // Exit

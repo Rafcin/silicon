@@ -1,2 +1,2 @@
-as -o HelloWorld.o HelloWorld.s
-ld -o HelloWorld HelloWorld.o
+as -o helloWorld.o helloWorld.s
+ld -o helloWorld helloWorld.o

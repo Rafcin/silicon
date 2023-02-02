@@ -1,8 +1,8 @@
 # Define the target file
-TARGET = Print
+TARGET = print
 
 # Define the source file
-SRC = Print.s
+SRC = print.s
 
 # Define the object file
 OBJ = $(SRC:.s=.o)

@@ -1,8 +1,8 @@
 # Define the target file
-TARGET = Add
+TARGET = add
 
 # Define the source file
-SRC = Add.s
+SRC = add.s
 
 # Define the object file
 OBJ = $(SRC:.s=.o)

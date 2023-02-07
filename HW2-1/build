@@ -1,2 +1,2 @@
-as -o Q1.o Q1.s -g
-ld -o Q1 Q1.o -g
+as -o segment.o segment.s -g
+ld -o segment segment.o -g

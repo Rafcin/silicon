@@ -1,14 +1,17 @@
 # Define the target file
-TARGET = rdnum
+TARGET = inpint
 
 # Define the source file
-SRC = rdnum.s
+SRC = inpint.s
+
+# Define the object file directory
+OBJ_DIR = ../
 
 # Define the object file
-OBJ = $(SRC:.s=.o)
+OBJ = $(OBJ_DIR)/$(SRC:.s=.o)
 
 # Define the external object files directory
-EXTERNALS = ..
+EXTERNALS = ../../cs3b
 
 # Define the flags for debugging
 DEBUG_FLAGS = -g
@@ -25,7 +28,7 @@ all: $(TARGET)
 $(TARGET): $(OBJ)
 	$(LINK) -o $(TARGET) $(OBJ) $(EXTERNALS)/*.o
 
-%.o: %.s
+$(OBJ_DIR)/%.o: %.s
 	$(CC) -o $@ $<
 
 # Define the clean rule

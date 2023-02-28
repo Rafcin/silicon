@@ -200,12 +200,14 @@
 
         //Print eq
         ldr x0, =sEq
+        //Run put
         bl putstring
 
         //Sum 
 
         //Print sum
         ldr x0, =sS
+        //Run put
         bl putstring
 
         //Print new line after statment
@@ -216,20 +218,25 @@
         //-------Memory-------\\
         //Print memory prompt
         ldr x0, =mP
+        //Run put
         bl putstring
 
         //Print memory A
         ldr x0, =pA
+        //Run put
         bl putstring
         //Add space
         ldr x0, =sSp
+        //Run put
         bl putstring
 
         //Print memory B
         ldr x0, =pB
+        //Run put
         bl putstring
         //Add space
         ldr x0, =sSp
+        //Run put
         bl putstring
 
         //Print memory C
@@ -237,6 +244,7 @@
         bl putstring
         //Add space
         ldr x0, =sSp
+        //Run put
         bl putstring
 
         //Print memory D
@@ -249,6 +257,9 @@
         //Print newline after statment
         ldr x0, =nl
         bl putstring
+
+        //Each quad is 8 bytes
+        //ADR1, ADR2, ADR3, ADR4
 
         // Exit
         mov x0, #0   // ARM 64-bit version
